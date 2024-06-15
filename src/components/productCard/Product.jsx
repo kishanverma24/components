@@ -1,6 +1,7 @@
 import React from "react";
 import "./product.css";
 import Card from "../card/ProductCard.jsx";
+import { NavLink } from "react-router-dom";
 
 function ProductItem() {
   const arr = [
@@ -10,15 +11,17 @@ function ProductItem() {
     { h6: "hello", p: "hey buddy", url: "/images/nike8.png" },
     { h6: "hello", p: "hey buddy", url: "/images/nike9.png" },
     { h6: "hello", p: "hey buddy", url: "/images/nike10.png" },
-    { h6: "hello", p: "hey buddy", url: "/images/nike10.png" },
-    { h6: "hello", p: "hey buddy", url: "/images/nike10.png" },
-    { h6: "hello", p: "hey buddy", url: "/images/nike10.png" },
-    { h6: "hello", p: "hey buddy", url: "/images/nike10.png" },
+ 
   ];
   return (
     <div className="main_div">
       {arr.map((obj, index) => (
-        <Card key={index} backgroundImage={obj.url} title={obj.h6} description={obj.p} />
+        <Card
+          key={index}
+          backgroundImage={obj.url}
+          title={obj.h6}
+          description={obj.p}
+        />
       ))}
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import "./subCategory.css";
 import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer.jsx";
 import CategoryCard from "../../components/categoryCard/CategoryCard.jsx";
 import { NavLink } from "react-router-dom";
 function SubCategory() {
@@ -47,7 +46,6 @@ function SubCategory() {
           })}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

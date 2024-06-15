@@ -1,7 +1,6 @@
 import React from "react";
 import "./category.css";
 import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer.jsx";
 import CategoryCard from "../../components/categoryCard/CategoryCard.jsx";
 import { NavLink } from "react-router-dom";
 function Category() {
